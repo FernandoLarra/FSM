@@ -1,0 +1,27 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Farmacia San Miguel
+    / Le styles
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
+    :css
+      body {
+        padding-top: 160px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-left: 600px;
+      }
+        %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}/
+  %script{:src => "/js/jquery-2.1.1.min.js"}
+  %body{:background => "/img/fondo.png"}
+    %form
+      .container
+        %label Código :
+        %input{:name => "username", :placeholder => "Ingrese su Código", :required => "", :type => "text"}/
+        %label Contraseña :
+        %input{:name => "password", :placeholder => "Ingrese su Contraseña", :required => "", :type => "password"}/
+        %p
+        %button{:type => "submit"} Ingresar
+        %a{:href => "#"} Olvido su contraseña?
+    /Le javascript
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "/js/bootstrap.js"}

@@ -14,5 +14,22 @@ module Farmacia
       haml :login
     end
 
+    get '/productos' do
+        haml :productos
+    end 
+
+    get '/tururu' do
+        haml :tururu
+    end
+
+    get '/ventas' do
+      haml :ventas
+  end
+  get '/orden_venta' do
+    haml :orden_venta
+  end
+  get '/caja' do
+    haml :caja
+  end
   end
 end

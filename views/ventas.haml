@@ -1,0 +1,43 @@
+!!!
+%html{:lang => "es"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Ventas
+    %link{:href => "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", :rel => "stylesheet"}/
+  %body
+    %form
+      %fieldset
+        %legend Ventas
+        %label Ingrese el Producto :
+        %input{:name => "username", :placeholder => "", :required => "", :type => "text"}/
+    .container
+      .row
+        .col
+          %table.table.table-striped.table-bordered
+            %thead
+              %tr
+                %th Nombre
+                %th Descripción
+                %th Código
+                %th Existencias
+                %th Imagén
+                %th Precio Unitario 
+                %th Opciones
+            %tbody
+              %tr
+                %td Sertal Compuesto
+                %td Asociación de Propinox clorhidrato y Clonixinato de lisina.
+                %td SC01
+                %td 20 Unidades
+                %td 
+                  %img{:src => "/img/sertal.png"}
+                %td Q.2.°°
+                %td 
+                  %input{:type => "checkbox"} Guardar
+                  %input{:type => "checkbox"} Eliminar 
+        %p
+        %input{:type => "checkbox"} Facturar
+      %script{:src => "https://code.jquery.com/jquery-3.4.1.slim.min.js"}
+      %script{:src => "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"}
+      %script{:src => "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"}

@@ -1,0 +1,22 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Farmacia San Miguel
+    / Le styles
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
+    :css
+      body {
+        padding-top: 160px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-left: 600px;
+      }
+        %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}/
+  %script{:src => "/js/jquery-2.1.1.min.js"}
+  %body{:background => "/img/fondo.jpg"}
+    %form
+      %fieldset
+        %legend Ventas
+        %label Ingrese su Producto :
+        %input{:name => "username", :placeholder => "", :required => "", :type => "text"}/
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "/js/bootstrap.js"}

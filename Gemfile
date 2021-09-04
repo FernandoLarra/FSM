@@ -1,13 +1,39 @@
 source 'https://rubygems.org'
 
+gem 'rake'
+
+# Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'rake'
-gem 'haml'
-gem "puma"
+gem 'sinatra-partial'
+gem 'sinatra-activerecord'
+
+# Use Thin as web server
+gem 'thin'
+
+# Detect changes and automatically reload web server
+gem 'shotgun'
+
+# Use PostgreSQL database
+gem 'pg'
+
+# Use ActiveRecord object relational map
+gem 'activerecord'
+gem 'activesupport'
+
+# Includes ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'rack-test'
   gem 'rspec'
-  gem 'webmock'
+end
+
+group :development, :test do
+  gem 'faker'
+  gem 'factory_bot'
+  gem 'tux'
+  gem 'pry'
 end

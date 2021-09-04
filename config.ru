@@ -1,7 +1,15 @@
-#\ -s puma
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/app') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/app')
-$:.push(File.dirname(__FILE__))
+# Require config/environment.rb
+require ::File.expand_path('../config/environment',  __FILE__)
 
-require 'app'
-run Farmacia::App
+set :app_file, __FILE__
+
+configure do
+  # See: http://www.sinatrarb.com/faq.html#sessions
+  enable :sessions
+  set :session_secret, ENV['SESSION_SECRET'] || 'this is a secret shhhhh'
+
+  # Set the views to
+  set :views, File.join(Sinatra::Application.root, "app", "views")
+end
+
+run Sinatra::Application

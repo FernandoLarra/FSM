@@ -1,0 +1,8 @@
+development:
+    adapter: postgresql
+    encoding: unicode
+    database: farmacia
+    pool: 2
+    host: postgres_container
+    username: fsm
+    password: fsm123

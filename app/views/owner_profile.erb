@@ -1,4 +1,28 @@
-<div class="container">
-  <h1>Welcome back, <%= @user %>!</h1>
-  <a href="/logout">Log out</a>
+<<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <br><br>
+      <h1 class="header center light-blue-text">Usuarios</h1>
+      <br><br>
+      <table class="responsive-table">
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Correo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @users.each do |usuario| %>
+          <tr>
+            <td><%= usuario.first_name %></td>
+            <td><%= usuario.last_name %></td>
+            <td><%= usuario.email %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>

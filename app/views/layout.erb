@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    normalize.css removes cross-browser differences in defaults, e.g.,
-    differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
-  <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
-  <link rel="stylesheet" href="/css/application.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Farmacia San Miguel</title>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/js/application.js"></script>
-
-  <title></title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <!-- This layout encapsulates all other views, i.e.
   all of your erb files are embedded here between the body tags -->
   <%= yield %>
+  <footer class="page-footer blue">
+    <div class="footer-copyright">
+      <div class="container">
+      Trabajado por <a class="orange-text text-lighten-3" href="http://materializecss.com">Fernando Larrañaga</a>
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.js"></script>
+  <script src="/js/init.js"></script>
 </body>
 </html>

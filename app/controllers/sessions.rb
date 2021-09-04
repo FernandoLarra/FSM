@@ -3,7 +3,8 @@ post '/login' do
 
   if user
     session[:user_id] = user.id
-    redirect to "users/#{current_user.id}"
+    # redirect to "users/#{current_user.id}"
+    redirect to home_url # see app/helpers/
   else
     redirect to home_url # see app/helpers/
   end

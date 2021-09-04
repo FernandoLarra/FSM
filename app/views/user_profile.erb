@@ -1,1 +1,26 @@
-<h1>Profile for <%= @user.get_name %></h1>
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <br><br>
+      <h1 class="header center light-blue-text">Perfil de Usuario</h1>
+      <br><br>
+      <table class="responsive-table">
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Correo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><%= @user.get_name %></td>
+            <td><%= @user.get_last_name %></td>
+            <td><%= @user.get_mail %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

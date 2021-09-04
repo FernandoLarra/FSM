@@ -55,4 +55,12 @@ class User < ActiveRecord::Base
     self.first_name
   end
 
+  def get_mail
+    self.email
+  end
+
+  def get_last_name
+    self.last_name
+  end
+
 end

@@ -1,10 +1,18 @@
 <div class="container">
-  <h1>Farmacia San Miguel</h1>
-  <p>Login</p>
-  <form action="/login" method="post">
-    <input type="email" name="email" placeholder="Email">
-    <input type="password" name="password" placeholder="Password">
-    <input type="submit" value="Login">
-  </form>
-  <a href="/user/new">Create Account</a>
+  <h1 class="header center light-blue-text">Farmacia San Miguel</h1>
+  <div class="section">
+    <div class="row">            
+      <form class="col s12" action="/login" method="post">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="email" name="email" placeholder="Correo Electronico">
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">password</i>
+          <input type="password" name="password" placeholder="Contraseña">
+        </div>
+        <input type="submit" value="Ingresar">
+      </form>
+    </div>  
+  </div>
 </div>

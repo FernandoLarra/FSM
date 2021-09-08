@@ -28,6 +28,7 @@ class User < ActiveRecord::Base
   end
 
   def self.authenticate(user_info)
+    
     email = user_info[:email]
 
     # this uses the Password#password setter method above

@@ -3,31 +3,46 @@ get '/users' do
   redirect to '/' unless current_user
   @users = User.all
   erb :index do
-    erb :owner_profile
+    erb :users do
+      erb :owner_profile
+    end
   end
 end
 # Show
 get '/users/:id' do
   redirect to '/' unless current_user
   @user = User.find_by(id: params['id'])
-  # .get_name
-  # erb :owner_profile
   erb :index do
-    erb :user_profile
+    erb :users do
+      erb :user_profile
+    end
+  end
+end
+
+get '/user' do
+  redirect to '/' unless current_user
+  @user = User.find_by(email: params['email'])
+  erb :index do
+    erb :users do
+      erb :user_profile
+    end
   end
 end
 
 
 # New
 get '/user/new' do
-  redirect to '/' unless current_user
+  # redirect to '/' unless current_user
   erb :index do
-    erb :new_user
+    erb :users do
+      erb :new_user
+    end
   end
 end
 # Create
 post '/users' do
-  redirect to '/' unless current_user
+  puts params
+  # redirect to '/' unless current_user
   user = User.create(
     first_name: params[:first_name],
     last_name: params[:last_name],

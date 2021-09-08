@@ -1,0 +1,75 @@
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center light-blue-text">Nueva Factura</h1>
+      <br><br>
+      <div class="row">
+        <form class="col s12" action="/facturas" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input name="no_factura" type="text" placeholder="Número de Factura" class="validate">
+              <label for="no_factura">Número de Factura</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input name="fecha_emision" type="text" placeholder="Fecha de Emisóon" class="validate">
+              <label for="fecha_emision">Fecha de Emisión</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="no_empleado" type="text" placeholder="Número de Empleado" class="validate">
+              <label for="no_empleado">Número de Empleado</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contact_phone</i>
+              <input name="serie" type="text" placeholder="Serie" class="validate">
+              <label for="serie">Serie</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">contacts</i>
+              <input name="nit" type="text" placeholder="NIT" class="validate">
+              <label for="nit">NIT</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="cantidad_producto" type="text" placeholder="Canidad de Producto" class="validate">
+              <label for="cantidad_producto">Canidad de Producto</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="nombre_producto" type="text" placeholder="Nombre de Producto" class="validate">
+              <label for="nombre_producto">Producto</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="precio_producto" type="text" placeholder="Precio Producto" class="validate">
+              <label for="precio_producto">Precio Producto</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="stock" type="text" placeholder="Stock" class="validate">
+              <label for="stock">Stock</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input name="total" type="text" placeholder="Total" class="validate">
+              <label for="total">Total</label>
+            </div>
+          </div>
+          <input type="submit" value="Facturar">
+          </form>
+    </div>
+ </div>
+</div>
+<div class="container"></div>

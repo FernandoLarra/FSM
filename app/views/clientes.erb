@@ -1,0 +1,30 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <br><br>
+      <h1 class="header center light-blue-text">Clientes</h1>
+      <br><br>
+      <div class="row">
+        <form class="col s6" action="/cliente" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">confirmation_number</i>
+            <input name="nit" type="text" placeholder="Nit" class="validate">
+            <label for="nit">Nit</label>
+            </div>
+          </div>
+          <input type="submit" value="Buscar Cliente">
+        </form>
+        <form class="col s6" action="/clientes/nuevo" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled name="nit" type="text" class="validate">              
+            </div>
+          </div>
+          <input type="submit" value="Agregar Cliente">
+        </form>
+      </div>
+      <%= yield %>
+    </div>
+  </div>
+</div>

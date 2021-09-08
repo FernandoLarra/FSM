@@ -1,0 +1,30 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <br><br>
+      <h1 class="header center light-blue-text">Proveedores</h1>
+      <br><br>
+      <div class="row">
+        <form class="col s6" action="/proveedor" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+            <input name="nombre" type="text" placeholder="Nombre" class="validate">
+            <label for="nombre">Nombre</label>
+            </div>
+          </div>
+          <input type="submit" value="Buscar Proveedor">
+        </form>
+        <form class="col s6" action="/proveedores/nuevo" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled name="nit" type="text" class="validate" visible="false">              
+            </div>
+          </div>
+          <input type="submit" value="Agregar Proveedor">
+        </form>
+      </div>
+      <%= yield %>
+    </div>
+  </div>
+</div>

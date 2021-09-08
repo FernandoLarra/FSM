@@ -1,0 +1,27 @@
+<table class="responsive-table">
+  <thead>
+    <tr>
+        <th>Serie</th>
+        <th>Nombre Producto</th>
+        <th>Peso</th>
+        <th>Precio</th>
+        <th>Marca</th>
+        <th>Cantidad</th>
+        <th>Fecha Caducidad</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @productos.each do |producto| %>
+    <tr>
+      <td><%= producto.serie %></td>
+      <td><%= producto.nombre_producto %></td>
+      <td><%= producto.peso %></td>
+      <td><%= producto.precio %></td>
+      <td><%= producto.marca %></td>
+      <td><%= producto.cantidad %></td>
+      <td><%= producto.fecha_caducidad %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+<table class="responsive-table">
+  <thead>
+    <tr>        
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Correo</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proveedores.each do |proveedor| %>
+    <tr>
+      <td><%= proveedor.nombre %></td>
+      <td><%= proveedor.direccion %></td>
+      <td><%= proveedor.telefono %></td>
+      <td><%= proveedor.correo %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+<table class="responsive-table">
+  <thead>
+    <tr>
+        <th>No. Factura</th>
+        <th>Fecha Emision</th>
+        <th>Nit</th>
+        <th>Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facturas.each do |factura| %>
+    <tr>
+      <td><%= factura.no_factura %></td>
+      <td><%= factura.fecha_emision %></td>
+      <td><%= factura.nit %></td>
+      <td><%= factura.total %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

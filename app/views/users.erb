@@ -1,0 +1,30 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <br><br>
+      <h1 class="header center light-blue-text">Usuarios</h1>
+      <br><br>
+      <div class="row">
+        <form class="col s6" action="/user" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+            <input name="email" type="text" placeholder="Correo Electronico" class="validate">
+            <label for="email">Correo Electronico</label>
+            </div>
+          </div>
+          <input type="submit" value="Buscar Usuario">
+        </form>
+        <form class="col s6" action="/user/new" method="get">
+          <div class="row">
+            <div class="input-field col s6">
+              <input disabled name="email" type="text" class="validate">              
+            </div>
+          </div>
+          <input type="submit" value="Agregar Usuario">
+        </form>
+      </div>
+      <%= yield %>
+    </div>
+  </div>
+</div>

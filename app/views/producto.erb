@@ -1,0 +1,25 @@
+<table class="responsive-table">
+  <thead>
+    <tr>
+        <th>Serie</th>
+        <th>Nombre Producto</th>
+        <th>Peso</th>
+        <th>Precio</th>
+        <th>Marca</th>
+        <th>Cantidad</th>
+        <th>Fecha Caducidad</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @productos.get_serie %></td>
+      <td><%= @productos.get_nombre_producto %></td>
+      <td><%= @productos.get_peso %></td>
+      <td><%= @productos.get_precio %></td>
+      <td><%= @productos.get_marca %></td>
+      <td><%= @productos.get_cantidad %></td>
+      <td><%= @productos.get_fecha_caducidad %></td>
+    </tr>
+  </tbody>
+</table>

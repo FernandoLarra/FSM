@@ -1,0 +1,56 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <h1 class="header center light-blue-text">Nuevo Producto</h1>
+    <br><br>
+    <div class="row">
+      <form class="col s12" action="/productos" method="post">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">featured_play_list</i>
+            <input name="serie" type="text" placeholder="Numero de Serie" class="validate">
+            <label for="serie">Serie</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">location_searching</i>
+            <input name="nombre_producto" placeholder="Nombre Producto" type="text" class="validate">
+            <label for="nombre_producto">Nombre Producto</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">toys</i>
+            <input name="peso" type="text" placeholder="Peso" class="validate">
+            <label for="peso">Peso</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">attach_money</i>
+            <input name="precio" type="text" placeholder="Precio de Producto" class="validate">
+            <label for="precio">Precio</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">label</i>
+            <input name="marca" type="text" placeholder="Marca Producto" class="validate">
+            <label for="marca">Marca</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">power</i>
+            <input name="cantidad" type="text" placeholder="Cantidad de Producto" class="validate">
+            <label for="cantidad">Cantidad</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">perm_contact_calendar</i>
+              <input name="fecha_caducidad" type="text" placeholder="Fecha de Caducidad" class="datepicker">
+              <label for="fecha_caducidad">Fecha Caducidad</label>
+          </div>
+        </div>
+        <input type="submit" value="Agregar Producto">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container"></div>
